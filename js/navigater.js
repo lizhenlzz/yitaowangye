@@ -27,7 +27,8 @@ var $ = jQuery.noConflict();
 	//点击导航按钮的时候 需要知道 点击按钮的商品类型id
 	Navigater.prototype.createView = function(url,superView,callback) {
         $.get(url,function(result){
-            console.log(result)
+       // result为服务端返回的数据
+           // console.log(result)
             if(result.code==0){
                result.data.forEach(function(obj){
                    //创建导航列表
@@ -37,7 +38,12 @@ var $ = jQuery.noConflict();
         });
         return this;
 	};
-	
+	//当点击搜索按钮
+	$(document).on("click",".click-search",function(){
+      var keywords=$(".key-content").val()//传递的参数的值也就是搜索内容
+      window.open("html/search.html?search_text="+keywords) //当点击搜索按钮时跳转到搜索的物品界面
+      console.log(keywords)
+    })
 	
 	window.Navigater = Navigater;
 })();

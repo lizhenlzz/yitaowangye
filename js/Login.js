@@ -5,6 +5,7 @@ var $=jQuery.noConflict();
 	function Login(success){
 		this.shouLogin(success);
 	}
+	//登录界面
 	Login.prototype.shouLogin=function(success){
 		var loginContainer=$("<div class='loginContainer'></div>")
 	    var closeButton=$("<p>关闭</p>")
@@ -37,30 +38,33 @@ var $=jQuery.noConflict();
 	    	"color":"white",
 	    	"padding":"5px",
 	    });
+	    //点击关闭按钮，移除登录界面
 	    closeButton.click(function(){
 	    	loginContainer.fadeOut(600,function(){
 	    		loginContainer.remove();
 	    	});
 	    });
+	    //登录
 	    loginButton.click(function(){
-	    	$.post(PRODUCT_HOST+LOGIN,{status:"login",username:usernameInput.children().val(),password:passwordInput.children().val()},function(data){
+	    	$.post(PRODUCT_HOST+LOGIN,{status:"login",username:usernameInput.children().val(),password:passwordInput.children().val()},function(result){
 	    			//alert("login success");
-	    			console.log(data)
-	    			//登录成功
-	    			if (data.code==0) {
+	    			console.log(result)
+	    			//如果登录成功
+	    			if (result.code==0) {
 	    				loginContainer.fadeOut(600,function(){
-	    		            loginContainer.remove();
-	    		            //执行外面传入的方法
-	    		            success(data.data);
+	    		            loginContainer.remove();//移除登录界面
+	    		            success(result.data);//执行外面传入的方法
 	    	            });
 	    			}else{
-	    				alert(data.message);
+	    				alert(result.message);//否则提示失败原因
 	    			}
+	    			//登录后将用户的用户名、token、id下载到当地
+	    			localStorage.setItem("username",result.data.username);
+                    localStorage.setItem("token",result.data.token);
+                    localStorage.setItem("user_id",result.data.user_id);
 	    		}
 	    	);
 	    });
-	    
-	    
 	    loginContainer.append(closeButton);
 	    loginContainer.append(usernameInput);
 	    loginContainer.append(passwordInput);

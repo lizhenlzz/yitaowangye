@@ -86,7 +86,6 @@ section > nav{
    padding: 0 50px;
    width: 1200px;
    margin: 0 auto;
-   
 }
 .main-nav-container li{
    float: left;
@@ -104,5 +103,4 @@ section > nav{
    content: '';
    display: block;
    clear: both;
-   
 }

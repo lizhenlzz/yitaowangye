@@ -9,6 +9,10 @@ function init(){
 	//导航
 	new Navigater().createView(PRODUCT_HOST+PRODUCT_TYPE,$(".main-nav-container"),function(event){
 	    console.log(event);
+	    $(".goods-container").html("")
+	    new Good(PRODUCT_HOST+GOODS,{cat_id:event.data.id,page:1,pagesize:10},$(".goods-container"),function (event) {
+            console.log(event.data);
+        });
 	});
 
     //轮播

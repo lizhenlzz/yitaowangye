@@ -1,28 +1,26 @@
 <!DOCTYPE html>
 <html>
-
 	<head>
-		<meta charset="utf-8" />
+		<meta charset="UTF-8">
 		<title></title>
-		<link rel="stylesheet" href="css/common.css" />
-		<link rel="stylesheet" href="css/unfiy.css" />
-	    <link rel="stylesheet" href="css/index.css" />
-	    <link rel="stylesheet" href="css/footer.css"/>
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/unfiy.css" />
+		<link rel="stylesheet" href="../css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/shopping-cart.css"/>
+		<link rel="stylesheet" href="../css/footer.css"/>
 	</head>
-
 	<body>
 		<header>
 			<div class="header-top">
 				<div class="header-top-container">
 					<div class="header-top-home">
 						<a href="#">欢迎来到一淘网，阿里巴巴旗下生活省钱利器！</a>
-						
 					</div>
 					<div class="header-top-menu">
 						<ul>
 							<li><a class="header-top-login" href="#">亲！请登录</a><a class="header-top-register" href="#">或注册</a></li>
-							<li><a class="header-top-order" href="html/balance.html">我的订单</a></li>
-							<li><a class="header-top-shoppingcar" href="html/shopping-cart.html">购物车</a></li>
+							<li><a class="header-top-order" href="../html/balance.html">我的订单</a></li>
+							<li><a class="header-top-shoppingcar" href="../html/shopping-cart.html">购物车</a></li>
 							<li><a class="header-top-message" href="#">消息</a></li>
 							<li><a class="header-top-score" href="#">我的积分</a></li>
 						</ul>
@@ -31,39 +29,40 @@
 			</div>
 			<div class="header-search-container">
                 <div class="search-container">
-                	<div class="header-search-logo"><a href="#"><img src="img/image/header/logo.png" height="110px"/></a></div>
-                    <div class="header-search-content"><input type="text" class="key-content"/><input type="image" src="img/image/header/search.png" class="click-search"/></div>
-                    <div class="header-search-code"><a href="#"><img src="img/image/header/download.png" height="110px"/></a></div>
+                	<div class="header-search-logo"><a href="#"><img src="../img/image/header/logo.png" height="110px"/></a></div>
+                    <div class="header-search-content"><input type="text" class="key-content"/><input type="image" src="../img/image/header/search.png" class="click-search"/></div>
+                    <div class="header-search-code"><a href="#"><img src="../img/image/header/download.png" height="110px"/></a></div>
                 </div>
 			</div>
 		</header>
-		<section>
-		    <nav>
+	     <section>
+			<nav>
 		        <ul class="main-nav-container"></ul>
 		    </nav>
-		    <div class="main-course">
-		    	<div class="main-course-container">
-		    	    <div id="left-course"></div>
-		    	    <div id="center-course"></div>
-		    	    <div id="right-course"></div>
-		        </div>
-		    </div>
 		    <div class="banner-bottom">
-		    	<div class="banner-bottom-pic">
-		    		<img src="img/image/header/standard.png"/>
-		    	</div>
 		    	<div class="hot-goods">
-		    		<p>热门商品</p>
-		    		<img src="img/image/header/TB1adb0OFXXXXXzapXXXXXXXXXX-245-81.png"/>
+		    		<p>购物车</p>
+		    		<img src="../img/image/header/TB1adb0OFXXXXXzapXXXXXXXXXX-245-81.png"/>
 		    	</div>
 		    </div>
-		    <div class="main-goods-list">
-		    	<div class="goods-container">
-		    		
+		    <div class="order-message">
+		    	<div class="order-message-content">
+		    		<div class="order-message-nav">
+		    			<input type="checkbox" id="choose" value="" />
+		    			<span>全选</span>
+		    			<span class="range">商品</span>
+		    			<span>数量</span>
+		    			<span>单价(元)</span>
+		    			<span>小计(元)</span>
+		    			<span class="not-range">删除/购买</span>
+		    		</div>
+		    		<div class="order-message-num">
+		    			
+		    		</div>
 		    	</div>
 		    </div>
 		</section>
-		<footer>
+	   <footer>
 			<div class="footer-content">
 				<div class="footer-content-detail">
 					<div class="about-content">
@@ -83,7 +82,7 @@
 					</dl>
 					<dl>
 						<dt>关于我们</dt>
-						<dd><a href="#"><img src="img/image/header/qr.png" width="119" height="162"/></a></dd>
+						<dd><a href="#"><img src="../img/image/header/qr.png" width="119" height="162"/></a></dd>
 					</dl>
 					<dl>
 						<dt>关于我们</dt>
@@ -131,14 +130,13 @@
 				
 			</div>
 		</footer>
-		
-		<script src="js/default.js"></script>
-		<script src="js/jquery-3.2.1.js"></script>
-	    <script src="js/Course.js"></script>
-	    <script src="js/navigater.js"></script>
-	    <script src="js/Login.js"></script>
-	    <script src="js/goods.js"></script>
-	    <script src="js/index.js"></script>
 	</body>
-
+	<script src="../js/default.js"></script>
+	<script src="../js/jquery-3.2.1.js"></script>
+	<script src="../js/navigater.js"></script>
+	<script src="../js/Login.js"></script>
+	<script src="../js/index.js"></script>
+	<script src="../js/shopping-cart.js"></script>
+	<script src="../js/app.js"></script>
+	
 </html>

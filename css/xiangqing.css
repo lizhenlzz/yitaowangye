@@ -1,0 +1,68 @@
+.banner-bottom-pic{
+	width: 1200px;
+	margin: 0 auto;
+	border-bottom: 2px solid #FB3434;
+	border-top: 2px solid #FB3434;
+}
+.goods-content-bor{
+	width: 1200px;
+	height: 360px;
+	margin: 0 auto;
+	border-top: 2px solid #FB3434;
+	border-bottom: 2px solid #FB3434;
+	margin-bottom: 20px;
+}
+.imging{
+	width: 300px;
+	padding: 30px 0;
+	float: left;
+}
+#goods-message{
+	width: 430px;
+	float: left;
+	padding: 40px 30px;
+}
+#goods-message button{
+	width: 30px;
+	height: 30px;
+}
+#goods-message input{
+	width: 50px;
+	height: 26px;
+	text-align: center;
+}
+.suggest{
+    float: left;
+    padding-left: 30px;
+    padding-top: 30px;
+    line-height: 20px;
+}
+
+.goods-name{
+	width: 400px;
+	font-weight: 900;
+	padding-top: 30px;
+}
+.goods-price{
+	padding-top: 30px;
+	color: #FB3434;
+}
+.trading{
+	width: 600px;
+	float: left;
+	padding-left: 30px;
+}
+.trading button{
+	display: inline-block;
+	width: 120px;
+	height: 40px;
+	background: sandybrown;
+	border: none;
+	margin-right: 30px;
+	
+}
+.trading:after{
+	content: '';
+	display: block;
+	clear: both;
+}

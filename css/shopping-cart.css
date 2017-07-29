@@ -1,0 +1,70 @@
+.order-message-content{
+	width: 1200px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+.order-message-nav{
+	height: 80px;
+	border-bottom: 2px solid #FB3434;
+	border-top: 2px solid #FB3434;
+	line-height: 80px;
+}
+#choose{
+	margin-left: 30px;
+}
+.order-message-nav span{
+	padding-right: 135px;
+}
+.order-message-nav .range{
+	padding-right: 224px;
+}
+.order-message-nav .not-range{
+	padding-right: 0px;
+	padding-left: 19px;
+}
+.text-line{
+	height: 85px;
+	border-bottom: 1px solid #FB3434;
+}
+.text-line img{
+	vertical-align: middle;
+}
+.text-line div{
+	display: inline-block;
+	margin-left: 38px;
+}
+
+.text-line input{
+	margin-left: 30px;
+}
+.text-line div button{
+	width: 30px;
+	height: 30px;
+}
+.text-line div input{
+	margin-left: 0px;
+	width: 34px;
+	height: 26px;
+}
+
+.text-line i{
+	margin-left: 60px;
+}
+.text-line i a{
+    display: inline-block;
+    width: 200px;
+    overflow: hidden; 
+    white-space: nowrap; 
+    text-overflow: ellipsis;
+}
+.text-line span{
+	display: inline-block;
+	width: 100px;
+	margin-left: 112px;
+}
+.text-line button{
+	margin-left: 136px;
+}
+.text-line div button{
+	margin-left: 0px;
+}

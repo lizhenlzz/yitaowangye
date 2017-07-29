@@ -1,0 +1,45 @@
+.footer-content{
+	background: #444444;
+}
+.footer-content-detail{
+	max-width: 950px;
+	margin: 0 auto;
+}
+.about-content{
+	width: 950px;
+	display: flex;
+	padding-top: 30px;
+}
+.about-content dl{
+	display: inline-block;
+	min-height: 0;
+	min-width: 0;
+	padding: 0 53px;
+}
+.about-content dl dt{
+	padding-bottom: 10px;
+	font-size: 18px;
+	color: white;
+	font-weight: 600;
+	text-align-last: left;
+}
+.about-content dl dd a{
+	font-size: 14px;
+	color: white;
+}
+.official-partner{
+	width: 950px;
+	padding-top: 20px;
+	text-align: center;
+}
+.official-partner a{
+	color: #999999;
+	font-size: 14px;
+	padding: 0 7px;
+}
+.copy-right{
+	text-align: center;
+	color: #999999;
+	font-size: 14px;
+	padding-top: 20px;
+}

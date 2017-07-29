@@ -129,7 +129,9 @@ window.corouselView = window.corouselView||{};
         }
         var self = this;
         this.timer = setInterval(function () {
-            
+            if (callback){
+                callback();
+            }
             self.nextPage();
         },delay);
         return this;

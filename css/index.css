@@ -1,3 +1,6 @@
+.main-course{
+	background-color: #9ED3C1;
+}
 .main-course-container{
    width: 1200px;
    margin: 0 auto;
@@ -14,5 +17,38 @@
 .goods-container{
    width: 1200px;
    margin: 0 auto;
+}
+.banner-bottom-pic,.hot-goods{
+   width: 1200px;
+   margin: 0 auto;
+}
+.banner-bottom-pic img{
+	width: 1200px;
+	height: 80px;
+}
+.hot-goods{
+	position: relative;
+    font-size: 25px;
+    color: #FB3434;
+    height: 100px;
+    text-align: center;
+}
+.hot-goods img{
+	width: 200px;
+	height: 100px;
+}
+.hot-goods p{
+	position: absolute;
+	top: 35px;
+	left: 540px;
+}
+.goods-container>div{
+	float: left;
+	margin-right:15px;
+}
+.goods-container:last-child:after{
+	content: '';
+   display: block;
+   clear: both;
 }
 
